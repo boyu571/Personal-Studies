@@ -1,3 +1,3 @@
-# Today I Learned :book:
+# 개인 공부 :book:
 
-매일 매일 공부합니다.
+ML, DL, AI
