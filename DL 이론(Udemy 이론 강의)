@@ -50,4 +50,21 @@ tensor : 행렬로 표현 가능한 2차원 형태의 배열을 높은 형태로
 import numpy as np
 
 def softmax(x):
-  expx
+  exp_x = np.exp(x)
+  sum_exp_x = np.sum(exp_x)
+  y = exp_x / sum_exp_x
+  
+  return y
+
+x = np.array([1.5, 3.6, 4.5])
+y = softmax(x)
+print(y)
+
+손실함수 : 신경망 성능의 '나쁨'을 나타내는 지표
+
+MSE = 평균 제곱의 오차
+CE = 교차 엔트로피 오차
+원핫인코딩 : 출력값의 형태가 정답은 1이고, 나머지는 전부 0인 배열. 
+
+미니배치 학습
+Batch : 딥러닝에서 한번의 iteration을 위한 input데이터
