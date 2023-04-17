@@ -1,3 +1,3 @@
 # 개인 공부 :book:
 
-ML, DL, AI
+ML, DL, AI, Datascience
